@@ -1,0 +1,6 @@
+Start
+  result = sales_data  
+    |> FILTER region = "North America"  
+    |> GROUPBY category  
+    |> SUM revenue, COUNT orders;
+End
